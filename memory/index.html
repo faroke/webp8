@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="&quot;en&quot;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>memory</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-DataTables.css">
+    <link rel="stylesheet" href="assets/css/Data-Table-1.css">
+    <link rel="stylesheet" href="assets/css/Data-Table.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Table-with-search-1.css">
+    <link rel="stylesheet" href="assets/css/Table-with-search.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+        <div class="container"><a class="navbar-brand" href="#">Memory Game</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#reload" onClick="document.location.reload(true)">Restart</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="modal" href="#modal">ScoreBoard</a></li>
+                </ul>
+                <p class="d-inline-flex navbar-text" id="score">0 : Points</p>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-xl-2">
+                    <form><img id="img1" src="assets/img/img-revert.jpg" class="hidden rond" onclick="changeImage('img1')"/></form>
+                </div>
+                <div class="col-md-3 col-xl-2">
+                    <form><img id="img2" src="assets/img/img-revert.jpg" class="hidden rond" onclick="changeImage('img2')"/></form>
+                </div>
+                <div class="col-md-3 col-xl-2">
+                    <form><img id="img3" src="assets/img/img-revert.jpg" class="hidden rectangle" onclick="changeImage('img3')"/></form>
+                </div>
+                <div class="col-md-3 col-xl-2">
+                    <form><img id="img4" src="assets/img/img-revert.jpg" class="hidden rectangle" onclick="changeImage('img4')"/></form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="scoreboard">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">ScoreBoard</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body"><span class="counter pull-right"></span>
+<table class="table table-hover table-bordered results">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th class="col-md-5 col-xs-5">Name / Username</th>
+      <th class="col-md-4 col-xs-4">Hours</th>
+      <th class="col-md-3 col-xs-3">Nb Try</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Pseudo 1</td>
+      <td>12:00</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table></div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/Bootstrap-DataTables.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/swap.js"></script>
+    <script src="assets/js/Table-with-search.js"></script>
+</body>
+
+</html>
